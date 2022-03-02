@@ -74,8 +74,8 @@ function main() {
     var inTxt = GetContent()
     if (inTxt.indexOf("饿了么") >= 0) {
         if (imType == 'wxmp') {
-            var mts = mt[Math.floor(Math.random() * mt.length)]
-            sendImage(mts[Math.floor(Math.random() * mts.length)])
+            var elms = elm[Math.floor(Math.random() * elm.length)]
+            sendImage(elms[Math.floor(Math.random() * elms.length)])
             return
         }
         sendText("" + getRandomELM())
@@ -83,8 +83,8 @@ function main() {
     }
     if (inTxt.indexOf("美团") >= 0) {
         if (imType == 'wxmp') {
-            var elms = elm[Math.floor(Math.random() * elm.length)]
-            sendImage(elms[Math.floor(Math.random() * elms.length)])
+            var mts = mt[Math.floor(Math.random() * mt.length)]
+            sendImage(mts[Math.floor(Math.random() * mts.length)])
             return
         }
         sendText("" + getRandomMT())
